@@ -1,14 +1,10 @@
 "use strict";
 {
     globalThis.C3.Plugins.EMI_INDO_inappbrowser.Acts = {
-        ActionId(url, target, location)
-        {
-            if (typeof cordova == 'undefined')
-            {
+        ActionId(url, target, location) {
+            if (typeof cordova == 'undefined') {
                 return;
             }
-            else
-            {};
 
             const self = this;
 
@@ -17,86 +13,58 @@
 
             this.inAppBrowserRef = window.cordova.InAppBrowser.open(url, target, location);
 
-            this.inAppBrowserRef.addEventListener('loadstart', function()
-            {
+            this.inAppBrowserRef.addEventListener('loadstart', function () {
 
 
                 self._trigger(self._Candition.OnLoadStart);
 
-
             });
 
-            this.inAppBrowserRef.addEventListener('loadstop', function()
-            {
+            this.inAppBrowserRef.addEventListener('loadstop', function () {
 
                 self._trigger(self._Candition.OnLoadStop);
 
             });
 
-            this.inAppBrowserRef.addEventListener('loaderror', function()
-            {
+            this.inAppBrowserRef.addEventListener('loaderror', function () {
 
                 self._trigger(self._Candition.OnLoadError);
 
             });
 
-
-
         },
 
-        async OpenUrl(url, target, location)
-        {
-            if (typeof cordova == 'undefined')
-            {
+        async OpenUrl(url, target, location) {
+            if (typeof cordova == 'undefined') {
                 return;
             }
-            else
-            {};
-
 
             await this.openUrl(url, target, location);
 
-
         },
 
-        async Show()
-        {
-            if (typeof cordova == 'undefined')
-            {
+        async Show() {
+            if (typeof cordova == 'undefined') {
                 return;
             }
-            else
-            {};
-
-
             await this.show();
 
         },
 
-        async Hide()
-        {
-            if (typeof cordova == 'undefined')
-            {
+        async Hide() {
+            if (typeof cordova == 'undefined') {
                 return;
             }
-            else
-            {};
 
             await this.hide();
         },
 
-        async Close()
-        {
-            if (typeof cordova == 'undefined')
-            {
+        async Close() {
+            if (typeof cordova == 'undefined') {
                 return;
             }
-            else
-            {};
-
 
             await this.exit();
-
 
         }
     };
