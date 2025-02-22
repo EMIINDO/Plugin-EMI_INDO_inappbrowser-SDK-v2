@@ -1,0 +1,117 @@
+{
+  "custom": {
+    "conditions": [
+      {
+        "id": "a",
+        "scriptName": "A",
+        "highlight": false,
+        "isTrigger": true,
+        "isDeprecated": true
+      },
+      {
+        "id": "on-load-start",
+        "scriptName": "OnLoadStart",
+        "highlight": false,
+        "isTrigger": true
+      },
+      {
+        "id": "on-load-stop",
+        "scriptName": "OnLoadStop",
+        "highlight": false,
+        "isTrigger": true
+      },
+      {
+        "id": "on-load-error",
+        "scriptName": "OnLoadError",
+        "highlight": false,
+        "isTrigger": true
+      },
+      {
+        "id": "on-exit",
+        "scriptName": "OnExit",
+        "highlight": false,
+        "isTrigger": true
+      }
+    ],
+    "actions": [
+      {
+        "id": "action-id",
+        "scriptName": "ActionId",
+        "highlight": false,
+        "isDeprecated": true,
+        "params": [
+          {
+            "id": "url",
+            "type": "string"
+          },
+          {
+            "id": "target",
+            "type": "combo",
+            "items": [
+              "_self",
+              "_blank",
+              "_system"
+            ]
+          },
+          {
+            "id": "location",
+            "type": "combo",
+            "items": [
+              "location=yes",
+              "location=no"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "open-url",
+        "scriptName": "OpenUrl",
+        "highlight": false,
+        "isAsync": true,
+        "params": [
+          {
+            "id": "url",
+            "type": "string",
+            "initialValue": "\"https://www.construct.net\""
+          },
+          {
+            "id": "target",
+            "type": "combo",
+            "items": [
+              "_self",
+              "_blank",
+              "_system"
+            ]
+          },
+          {
+            "id": "location",
+            "type": "combo",
+            "items": [
+              "location=yes",
+              "location=no"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "show",
+        "scriptName": "Show",
+        "highlight": false,
+        "isAsync": true
+      },
+      {
+        "id": "hide",
+        "scriptName": "Hide",
+        "highlight": false,
+        "isAsync": true
+      },
+      {
+        "id": "close",
+        "scriptName": "Close",
+        "highlight": false,
+        "isAsync": true
+      }
+    ],
+    "expressions": []
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "languageTag": "en-US",
+  "fileDescription": "Strings for InAppBrowser Plugin",
+  "text": {
+    "plugins": {
+      "emi_indo_inappbrowser": {
+        "name": "InAppBrowser",
+        "description": "You can show helpful articles, videos, and web resources inside of your app. Users can view web pages without leaving your app.",
+        "help-url": "https://github.com/EMI-INDO/c3addon-bug/issues",
+        "properties": {},
+        "aceCategories": {
+          "custom": "In App Browser"
+        },
+        "conditions": {
+          "a": {
+            "list-name": "A",
+            "display-text": " Set Url to ",
+            "description": "Using get Http Proxy Information."
+          },
+          "on-load-start": {
+            "list-name": "On Load Start",
+            "display-text": "On Load Start",
+            "description": "event fires when the InAppBrowser starts to load a URL."
+          },
+          "on-load-stop": {
+            "list-name": "On Load Stop",
+            "display-text": "On Load Stop",
+            "description": "event fires when the InAppBrowser finishes loading a URL."
+          },
+          "on-load-error": {
+            "list-name": "On Load Error",
+            "display-text": "On Load Error",
+            "description": "event fires when the InAppBrowser encounters an error loading a URL."
+          },
+          "on-exit": {
+            "list-name": "On Exit",
+            "display-text": "On Exit",
+            "description": "event fires when the InAppBrowser window is closed."
+          }
+        },
+        "actions": {
+          "action-id": {
+            "list-name": "Open Url",
+            "display-text": " Set Url to (url: [b]{0}[/b], target: [b]{1}[/b], location: [b]{2}[/b]).",
+            "description": "You can show helpful articles, videos, and web resources inside of your app. Users can view web pages without leaving your app.",
+            "params": {
+              "url": {
+                "name": "Url :",
+                "desc": "example https://www.construct.net/"
+              },
+              "target": {
+                "name": "Target :",
+                "desc": "target",
+                "items": {
+                  "_self": "Self",
+                  "_blank": "Blank",
+                  "_system": "System"
+                }
+              },
+              "location": {
+                "name": "Location :",
+                "desc": "Location",
+                "items": {
+                  "location=yes": "Yes",
+                  "location=no": "No"
+                }
+              }
+            }
+          },
+          "open-url": {
+            "list-name": "Open Url",
+            "display-text": " Set Url to (url: [b]{0}[/b], target: [b]{1}[/b], location: [b]{2}[/b]).",
+            "description": "You can show helpful articles, videos, and web resources inside of your app. Users can view web pages without leaving your app.",
+            "params": {
+              "url": {
+                "name": "Url :",
+                "desc": "example https://www.construct.net/"
+              },
+              "target": {
+                "name": "Target :",
+                "desc": "target",
+                "items": {
+                  "_self": "Self",
+                  "_blank": "Blank",
+                  "_system": "System"
+                }
+              },
+              "location": {
+                "name": "Location :",
+                "desc": "Location",
+                "items": {
+                  "location=yes": "Yes",
+                  "location=no": "No"
+                }
+              }
+            }
+          },
+          "show": {
+            "list-name": "Show",
+            "display-text": "Show",
+            "description": "Displays an InAppBrowser window that was opened hidden. Calling this has no effect if the InAppBrowser was already visible."
+          },
+          "hide": {
+            "list-name": "Hide",
+            "display-text": "Hide",
+            "description": "Hides the InAppBrowser window. Calling this has no effect if the InAppBrowser was already hidden."
+          },
+          "close": {
+            "list-name": "Close",
+            "display-text": "Close",
+            "description": "Closes the InAppBrowser window."
+          }
+        },
+        "expressions": {}
+      }
+    }
+  }
+}
